@@ -1,0 +1,78 @@
+.div1{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    border: 5px salmon solid;
+    margin: 20px auto;
+}
+
+.div2{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    border: 5px salmon solid; 
+    margin: 20px auto;
+}
+
+
+.div1 h1{
+    color: navy;
+    text-align: center;
+}
+
+.div1 p{
+    text-align: center;
+    color: rgb(215, 0, 0);
+}
+
+.div2 h1{
+    color: navy;
+    text-align: center;
+}
+.div2 p{
+    text-align: center;
+    color: rgb(215, 0, 0);
+}
+
+
+.div1 img{
+    width: 150px;
+    height: 150px;
+    margin: 0 160px;
+}
+
+
+.div2 img{
+    width: 150px;
+    height: 150px;
+    margin: 0 160px;
+}
+
+
+.div2 h1{
+    color: navy;
+    text-align: center;
+}
+
+
+h1{
+    color: navy;
+    text-align: center;
+}
+
+nav{
+    background-color: salmon;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 35px;
+    font-size: 18px;
+    font-family: monospace;
+}

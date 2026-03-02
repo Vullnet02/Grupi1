@@ -1,0 +1,141 @@
+
+
+.title-1 {
+    color: rgb(0, 120, 255);
+    background-color: yellow;
+   
+}   
+
+.title-2 {  
+    color: red;
+    background-color: cadetblue;
+}
+
+.title-3{
+    color: green;
+    background-color: powderblue;
+}
+
+
+.paraOne {
+    color: purple;
+    
+}
+
+.paraTwo {
+    color: orange;
+}
+
+.paraThree {
+    color: brown;
+}
+
+
+.foto1{
+    width: 300px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.foto2{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav a{
+    color : rgb(39, 42, 41);
+       text-decoration:none;
+       background-color: rgb(69, 255, 255);
+       border-radius: 5px;
+         padding: 5px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a:hover{
+       background-color: rgb(20, 120, 120);
+    color: white;
+}
+
+
+.title-1:hover {
+    background-color: orange;
+    color: white;
+}
+
+.title-2:hover {
+    background-color: blue;
+    color: white;
+}
+
+.title-3:hover {
+    background-color: green;
+    color: white;
+}
+
+.div1{
+    background-color: lightgrey;
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.div2{
+    background-color: lightyellow;
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 50%;
+}
+
+main{
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+footer{
+    background-color: rgb(87, 134, 134);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+div{
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rosybrown;
+}
+
+div h2{
+    text-align: center;
+    color: white;
+}
+
+div p{
+    text-align: center;
+    color: white;
+}
+
+div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100px;
+}
+
+
