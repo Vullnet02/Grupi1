@@ -2,6 +2,7 @@
 /* NAVBAR */
 body{
     background-color:  rgb(69, 67, 67);
+    overflow: hidden;
 }
 
 .navbar{
@@ -204,3 +205,46 @@ footer p {
     
 }
 } */
+
+
+@media (max-width: 390px) {
+
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+.hero{
+    height: 60vh;
+}
+
+.hero-content h1{
+    font-size: 50px;
+}
+
+.MainDiv{
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.hero-content p{
+    font-size: 18px;
+
+}
+
+.aboutDiv h1{
+    font-size: 32px;    
+}
+.aboutDiv p{
+    font-size: 12px;
+    text-align: center;
+    padding: 0 30px;
+
+}
+}
