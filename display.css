@@ -1,0 +1,38 @@
+.products{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+  width: 150px;
+  height: 100px;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.products{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.products{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:200px;
+  padding:20px;
+  background:#f4f4f4;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}

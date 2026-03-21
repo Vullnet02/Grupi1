@@ -206,3 +206,57 @@ footer p {
 } */
 
 
+/* Responsive Styles for All Mobiles */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-content button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .MainDiv {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div11, .div22 {
+        width: 90%;
+        height: auto;
+    }
+
+    .div11 img {
+        width: 100%;
+        height: auto;
+    }
+    
+
+    .main1 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutDiv img {
+        width: 100%;
+        height: auto;
+    }
+}
+

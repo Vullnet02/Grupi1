@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex Example</title>
+
+<style>
+
+body{
+    font-family: Arial;
+}
+
+
+.products{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    width:150px;
+    height:100px;
+    background:lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+
+/* .products{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    flex:1 1 200px;
+    height:100px;
+    background:lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    font-weight:bold;
+} */
+</style>
+
+</head>
+
+<body>
+
+<div class="products">
+  <div class="card">Product</div>
+  <div class="card">Product</div>
+  <div class="card">Product</div>
+</div>
+
+</body>
+</html>
