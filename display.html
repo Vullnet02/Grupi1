@@ -4,62 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flex Example</title>
+<link rel="stylesheet" href="display.css">
 
-<style>
-
-body{
-    font-family: Arial;
-}
-
-
-.products{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:20px;
-    padding:20px;
-}
-
-.card{
-    width:150px;
-    height:100px;
-    background:lightblue;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-
-/* .products{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:20px;
-}
-
-.card{
-    flex:1 1 200px;
-    height:100px;
-    background:lightblue;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:8px;
-    font-weight:bold;
-} */
-</style>
 
 </head>
 
 <body>
+<nav class="navbar">
+  <ul>
+      <div class="logo"><a href="#"><img src="https://www.freeiconspng.com/uploads/apple-icon-4.png" alt="Logo" style="height:40px;"></a></div>
 
-<div class="products">
-  <div class="card">Product</div>
-  <div class="card">Product</div>
-  <div class="card">Product</div>
-</div>
+    <li><a href="#">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="slider">
+</section>
+
+
+<section class="products-section" id="products">
+  <h2>Our Products</h2>
+  <p>Check out our wide range of products designed to meet your needs.</p>
+  <div class="products">
+    <div class="product">
+      <img src="https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111902_mbp14-silver2.png" alt="">
+      <h3>MacBook Pro 14"</h3>
+      <p>16ram - 512GB SSD - M1 Pro Chip</p>
+      <h3>$1999</h3>
+    </div>
+    <div class="product">
+      <img src="https://www.apple.com/v/iphone/home/cj/images/overview/select/iphone_17pro__t1j902iw6kya_large_2x.jpg" alt="">
+      <h3>iPhone 17 Pro Max</h3>
+      <p>6.7-inch display - A17 Bionic Chip - Triple Camera System</p>
+      <h3>$1300</h3>
+
+    </div>
+    <div class="product">
+      <img src="https://www.spark.co.nz/content/dam/spark/images/product-images/devices/tablets/apple/ipad-air/ipad-air-m3-11/ipad-air-11-m3-blue-1.png" alt="">
+      <h3>iPad Air 11"</h3>
+      <p>11-inch display - M3 Chip - Lightweight Design</p>
+      <h3>$799</h3>
+    </div>
+  </div>
+
+</section>
 
 </body>
-</html>
+</html> 
