@@ -260,3 +260,14 @@ footer p {
     }
 }
 
+
+.bannerTwo{
+border: 1px solid red;
+height: 230px;
+width: 1200px;
+margin: 10px auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://50cdn.gjirafamall.tech/images/ac097fbb-5a56-415e-8e7b-3728ff4dab78/ac097fbb-5a56-415e-8e7b-3728ff4dab78.jpeg?w=1280);
+}

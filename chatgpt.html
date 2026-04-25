@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Landing Page</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h2 {
+    color: #4f46e5;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 10%;
+    text-align: center;
+    background: #f9fafb;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4338ca;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* hide radios */
+.slides input {
+    display: none;
+}
+
+/* navigation dots */
+.navigation-manual {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.manual-btn:hover {
+    background: white;
+}
+
+/* slide movement */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+/* FEATURES */
+.features {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* PRICING */
+.pricing {
+    padding: 60px 10%;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.pricing-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.price-card {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+/* CTA */
+.cta {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .cards,
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .slider {
+        height: 250px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h2>MyBrand</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Build Modern Websites</h1>
+    <p>Create clean and responsive designs with pure HTML & CSS</p>
+    <button class="btn">Get Started</button>
+</section>
+
+
+<!-- SLIDER -->
+<section class="slider">
+    <div class="slides">
+
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <div class="slide first">
+            <img src="https://images.unsplash.com/photo-1510557880182-3c9c9c3d2b5d">
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Features</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Optimized for speed and performance.</p>
+        </div>
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Works perfectly on all devices.</p>
+        </div>
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Clean UI with smooth interactions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-cards">
+        <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">$10/mo</p>
+            <button class="btn">Choose</button>
+        </div>
+        <div class="price-card">
+            <h3>Pro</h3>
+            <p class="price">$25/mo</p>
+            <button class="btn">Choose</button>
+        </div>
+        <div class="price-card">
+            <h3>Premium</h3>
+            <p class="price">$50/mo</p>
+            <button class="btn">Choose</button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Start Your Project Today</h2>
+    <button class="btn">Join Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 MyBrand. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color:#fafafa;
+    overflow:hidden;
+    border: 2px solid #ccc;
+}
+
+.navbar ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navbar li{
+    float:left;
+}
+
+.navbar li a{
+    display:block;
+    color:#111;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-family:Arial, sans-serif;
+}
+
+.navbar li a:hover{
+    background-color:#111;
+}
+
+
+
+.slider{
+    width:100%;
+    height:720px;
+    background-image: url('https://s3-alpha.figma.com/hub/file/2265716392504347390/825bc785-5b5d-44ea-8b76-2a0c3a86ee00-cover.png');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.content{
+    padding:50px;
+    text-align:center;
+    background-color:#e4e4e4;
+    font-family:Arial, sans-serif;
+    height: 150px;
+}
+
+
+.products-section{
+    padding:50px;
+    text-align:center;
+    background-color:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+.products{
+    display:flex;
+    justify-content:space-around;
+    margin-top:30px;
+}
+.product{
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    width:30%;
+
+}
+
+.product img{
+    width:300px;
+    height:auto;
+    border-radius:5px;
+}
+
+.product h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+.product p{
+    font-size:16px;
+    color:#555;
+}
+
+.promotions{
+    padding:50px;
+    text-align:center;
+    background-color:#f4f4f4;
+    font-family:Arial, sans-serif;
+
+}
+
+.promotions .div1{
+    display:inline-block;
+    width:45%;
+    vertical-align:top;
+}
+.promotions .div2{
+    display:inline-block;
+    width:45%;
+    vertical-align:top;
+    text-align:left;
+    margin-left:5%;
+}
+footer{
+    background-color:#c7c7c7;
+    text-align:center;
+    padding:20px;
+    font-family:Arial, sans-serif;
+}
+
+footer a{
+    color:#111;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .slider{
+        height:400px;
+    }
+    
+  
+}
+
+@media screen and (max-width: 480px ) {
+
+    .navbar ul{
+        justify-content: center;
+    }
+    .slider{
+        height:300px;
+        width: 100%;
+    }
+    .products{
+        flex-direction:column;
+        align-items:center;
+    }
+    .product{
+        width:80%;
+        margin-bottom:20px;
+    }
+    .promotions .div1,
+    .promotions .div2{
+        display:block;
+        width:100%;
+        margin:0 0 20px 0;
+    }
+
+}
+
+
